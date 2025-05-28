@@ -1,0 +1,60 @@
+/* UnwindZone Color Palette - Option B */
+:root {
+  --background: #f0f8ff;
+  --primary: #4682b4;
+  --accent: #ff7f50;
+  --text: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing label {
+  display: block;
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: var(--primary);
+  color: white;
+}
