@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Name Your Quokka</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Meet Your Calm Buddy</h1>
+    <p>This is your calm buddy, your virtual companion for a calmer, stronger you. Whenever life feels overwhelming, <span id="quokkaNamePlaceholder">your Quokka</span> is here to guide you with a smile.</p>
+    
+    <form id="quokkaForm">
+      <label for="quokkaName">Give your calm buddy a name:</label>
+      <input type="text" id="quokkaName" name="quokkaName" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("quokkaForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("quokkaName").value.trim();
+      if (name) {
+        localStorage.setItem("quokkaName", name);
+        window.location.href = "instructions.html";
+      }
+    });
+  </script>
+</body>
+</html>
