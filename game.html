@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Session</title>
+  <style>
+    body {
+      background-color: #d6eaf8;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .game-container {
+      margin: 20px auto;
+    }
+
+    .game-placeholder {
+      background-color: white;
+      border: 2px dashed #2980b9;
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Let’s play and relax!</h1>
+  <div class="game-container">
+    <div class="game-placeholder">Game 1 Placeholder</div>
+    <div class="game-placeholder">Game 2 Placeholder</div>
+    <div class="game-placeholder">Game 3 Placeholder</div>
+  </div>
+
+  <button onclick="goToCongrats()">Finish Session</button>
+
+  <script>
+    function goToCongrats() {
+      window.location.href = "congrats.html";
+    }
+  </script>
+
+</body>
+</html>
