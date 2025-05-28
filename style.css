@@ -1,60 +1,101 @@
-/* UnwindZone Color Palette - Option B */
 :root {
-  --background: #f0f8ff;
-  --primary: #4682b4;
-  --accent: #ff7f50;
-  --text: #333333;
+  --background: #edf4f2; /* Option A background */
+  --primary: #3e8e7e; /* Option A primary */
+  --accent: #2f4f4f; /* Option A accent */
+  --text: #1f2f2f; /* Option A text */
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: var(--background);
   color: var(--text);
+  text-align: center;
 }
 
-header {
-  background-color: var(--primary);
+.header {
+  padding: 3rem 1rem;
+  background: var(--primary);
   color: white;
-  padding: 1rem;
-  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .tagline {
   font-size: 1.2rem;
-  font-weight: 300;
+  margin-top: 0.5rem;
 }
 
-.hero {
-  text-align: center;
-  padding: 2rem;
+.price-highlight {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  margin-top: 1rem;
   background-color: var(--accent);
   color: white;
-  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+.cta-button:hover {
+  background-color: #204040;
 }
 
-.pricing label {
-  display: block;
+.info-sections {
+  margin: 2rem 1rem;
+}
+
+.dropdown {
   margin: 1rem 0;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+.dropdown-toggle {
   background-color: var(--primary);
   color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 0.5rem;
+  background: white;
+  color: var(--text);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.testimonials {
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+
+.testimonials h2 {
+  margin-bottom: 1rem;
+}
+
+.testimonial-card {
+  margin: 1rem auto;
+  max-width: 600px;
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--accent);
+  color: white;
+  font-size: 0.9rem;
 }
