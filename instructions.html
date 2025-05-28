@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breathing Instructions</title>
+  <style>
+    body {
+      background-color: #d6eaf8; /* Calm Blue Aura */
+      color: #2e4053;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+    }
+
+    .start-button {
+      background-color: #2980b9;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .start-button:hover {
+      background-color: #1f618d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome, <span id="petName">Your Calm Buddy</span> is here to help!</h1>
+  <p>Let's start your calming breathing exercise. Follow the guide on the next screen for 5 minutes.</p>
+  <p>Get ready to inhale for 4 seconds, and exhale for 6 seconds.</p>
+  <button class="start-button" onclick="startBreathing()">Start Breathing Session</button>
+
+  <script>
+    // Load pet name from localStorage
+    const petName = localStorage.getItem("petName") || "Your Calm Buddy";
+    document.getElementById("petName").textContent = petName;
+
+    function startBreathing() {
+      window.location.href = "breathing.html";
+    }
+  </script>
+
+</body>
+</html>
