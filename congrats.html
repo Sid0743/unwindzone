@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congratulations!</title>
+  <style>
+    body {
+      background-color: #d6eaf8;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin: 20px 0;
+    }
+
+    textarea {
+      width: 80%;
+      height: 100px;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1f618d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Congratulations!</h1>
+  <p>You’ve completed your calming session. How do you feel?</p>
+
+  <textarea placeholder="Share your thoughts..."></textarea><br>
+  <button onclick="submitFeedback()">Submit Feedback</button>
+
+  <script>
+    function submitFeedback() {
+      alert("Thank you for your feedback! 😊");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
